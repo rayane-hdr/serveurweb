@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - e-Pera</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 font-sans min-h-screen flex flex-col">
+    <header class="bg-blue-800 text-white p-4 text-center">
+        <h1 class="text-3xl">Bienvenue sur e-Pera</h1>
+        <nav class="mt-4">
+            <ul class="flex justify-center space-x-4">
+                <li><a href="login.html" class="text-white hover:underline">Connexion</a></li>
+                <li><a href="register.html" class="text-white hover:underline">Créer un compte</a></li>
+                <li><a href="panier.html" class="text-white hover:underline">Panier</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="p-8 text-center flex-grow">
+        <p class="text-lg text-gray-700 mb-8">Découvrez nos produits !</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded shadow-md">
+                <a href="produit1.html">
+                    <img src="sch.jpeg" alt="SCH" class="w-full h-48 object-cover mb-4 rounded">
+                    <h2 class="text-xl font-bold mb-2">SCH</h2>
+                    <p class="text-gray-700">MADAFAK</p>
+                </a>
+            </div>
+            <div class="bg-white p-6 rounded shadow-md">
+                <a href="produit2.html">
+                    <img src="gazo.jpeg" alt="Gazo" class="w-full h-48 object-cover mb-4 rounded">
+                    <h2 class="text-xl font-bold mb-2">Gazo</h2>
+                    <p class="text-gray-700">LA MALA EST GANGX</p>
+                </a>
+            </div>
+            <div class="bg-white p-6 rounded shadow-md">
+                <a href="produit3.html">
+                    <img src="damso.jpeg" alt="Damso" class="w-full h-48 object-cover mb-4 rounded">
+                    <h2 class="text-xl font-bold mb-2">Damso</h2>
+                    <p class="text-gray-700">SALE SALE</p>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-blue-800 text-white p-4 text-center mt-8 w-full">
+        <p>Kongolese baby aimerait sa BBL</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gazo - e-Pera</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 font-sans min-h-screen flex flex-col">
+    <header class="bg-blue-800 text-white p-4 text-center">
+        <h1 class="text-3xl">Détails du Produit Gazo</h1>
+        <nav class="mt-4">
+            <a href="index.html" class="text-white hover:underline">Accueil</a>
+        </nav>
+    </header>
+    <main class="p-8 flex-grow">
+        <div class="bg-white p-8 rounded shadow-md max-w-md mx-auto">
+            <img src="gazo.jpeg" alt="Gazo" class="w-full h-48 object-cover mb-4 rounded">
+            <h2 class="text-2xl font-bold mb-4">Gazo</h2>
+            
+            <button class="bg-blue-800 text-white px-4 py-2 rounded hover:bg-blue-700 mt-4">Ajouter au Panier</button>
+            
+            <p id="confirmMessage" class="text-green-500 mt-4 hidden">Produit ajouté au panier avec succès !</p>
+            <script>
+                document.querySelector('button').addEventListener('click', function (event) {
+                    event.preventDefault();
+                    document.getElementById('confirmMessage').classList.remove('hidden');
+                    setTimeout(function () {
+                        document.getElementById('confirmMessage').classList.add('hidden');
+                    }, 2000);
+                });
+            </script>
+        </div>
+    </main>
+    <footer class="bg-blue-800 text-white p-4 text-center mt-8 w-full">
+        <p>Kongolese baby aimerait sa BBL</p>
+    </footer>
+</body>
+
+</html>
